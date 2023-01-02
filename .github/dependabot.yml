@@ -5,3 +5,7 @@ updates:
     rebase-strategy: auto
     schedule:
       interval: daily
+    ignore:
+      - dependency-name: docker.elastic.co/elasticsearch/elasticsearch:7.17.8
+        versions:
+          - ~>8.0-0 # ignores Elasticsearch 8 updates
